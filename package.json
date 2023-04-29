@@ -1,0 +1,35 @@
+{
+  "name": "solana-account-manager",
+  "version": "1.0.0",
+  "description": "A real-time system that emulates the indexing of data on the blockchain",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "cd src && node main.js",
+    "format": "prettier --write .",
+    "prepare": "husky install",
+    "pre-commit": "npm run lint",
+    "lint": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davibauer/solana-account-manager.git"
+  },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "account",
+    "manager"
+  ],
+  "author": "Davi Bauer <davibauer@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/davibauer/solana-account-manager/issues"
+  },
+  "homepage": "https://github.com/davibauer/solana-account-manager#readme",
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "jest": "^27.4.7",
+    "prettier": "^2.8.8"
+  }
+}
