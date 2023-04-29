@@ -105,8 +105,9 @@ class SolanaAccountManager {
         break;
       }
       this.addOrUpdateAccount(update);
-      var random = crypto.randomInt(0, 1000);
-      await new Promise((resolve) => setTimeout(resolve, random));
+      await new Promise((resolve) =>
+        setTimeout(resolve, crypto.randomInt(0, 1000))
+      );
     }
   }
 
