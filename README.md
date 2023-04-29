@@ -31,7 +31,7 @@ These instructions will get you a copy of the project up and running on your loc
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/solana-account-manager.git
+git clone https://github.com/davibauer/solana-account-manager.git
 ```
 
 2. Install the dependencies
