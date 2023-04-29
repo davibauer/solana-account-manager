@@ -1,5 +1,13 @@
 # Solana Account Manager
 
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=davibauer_solana-account-manager&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=davibauer_solana-account-manager)
+
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=davibauer_solana-account-manager&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=davibauer_solana-account-manager)
+
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=davibauer_solana-account-manager&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=davibauer_solana-account-manager)
+
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=davibauer_solana-account-manager&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=davibauer_solana-account-manager)
+
 This is a Solana account management application that allows you to add, update, and fetch accounts based on various criteria.
 
 ## Table of Contents
