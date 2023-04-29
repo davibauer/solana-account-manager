@@ -4,7 +4,6 @@ const SolanaAccountManager = require('../controllers/solanaAccountManager');
 const SolanaAccount = require('../models/solanaAccount');
 
 jest.useFakeTimers();
-//jest.mock('fs');
 
 const accountData = {
   id: 'GzbXUY1JQwRVUf3j3myg2NbDRwD5i4jD4HJpYhVNfiDm',

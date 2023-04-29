@@ -1,5 +1,6 @@
 const fs = require('fs');
 const SolanaAccount = require('../models/solanaAccount');
+const crypto = require('crypto');
 
 class SolanaAccountManager {
   constructor() {
@@ -85,9 +86,10 @@ class SolanaAccountManager {
       const subtype = account.parentProgramSubType;
       const existingAccount = accountsBySubtype.get(subtype);
 
-      if (!existingAccount) {
-        accountsBySubtype.set(subtype, account);
-      } else if (existingAccount.tokens < account.tokens) {
+      if (
+        !existingAccount ||
+        (existingAccount && existingAccount.tokens < account.tokens)
+      ) {
         accountsBySubtype.set(subtype, account);
       }
     }
@@ -103,7 +105,8 @@ class SolanaAccountManager {
         break;
       }
       this.addOrUpdateAccount(update);
-      await new Promise((resolve) => setTimeout(resolve, Math.random() * 1000));
+      var random = crypto.randomInt(0, 1000);
+      await new Promise((resolve) => setTimeout(resolve, random));
     }
   }
 
